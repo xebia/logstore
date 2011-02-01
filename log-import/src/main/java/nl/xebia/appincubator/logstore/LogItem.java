@@ -5,6 +5,7 @@
  */
 package nl.xebia.appincubator.logstore;
 
+import org.apache.commons.lang.builder.*;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 
@@ -100,5 +101,19 @@ public class LogItem {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).
+                append("id", id).
+                append("revision", revision).
+                append("timestamp", timestamp).
+                append("reportType", reportType).
+                append("serverName", serverName).
+                append("ndc", ndc).
+                append("reportNumber", reportNumber).
+                append("message", message).
+                toString();
     }
 }
