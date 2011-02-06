@@ -26,6 +26,16 @@ h1 {
   padding:8px;
   width:60%;
   float:left;
+  margin-bottom:8px;
+}
+
+#logitems {
+  border:4px solid #dee;
+  background:#efe;
+  padding:8px;
+  width:60%;
+  float:left;
+  margin-bottom:8px;
 }
 
 #sidebar {

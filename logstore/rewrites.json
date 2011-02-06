@@ -1,0 +1,7 @@
+{
+    "to": "_list/index/recent-posts",
+    "from": "",
+    "query": {
+        "limit": 10
+    }
+}

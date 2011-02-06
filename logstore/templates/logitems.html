@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../../style/screen.css" type="text/css"/>
+</head>
+<body>
+{{>header}}
+<div id="content">
+    <h1>{{ title }}</h1>
+    <table class="logitems">
+        <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>Report type</th>
+            <th>Server</th>
+            <th>NDC</th>
+            <th>Report number</th>
+            <th>Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#logitems}}
+        <tr>
+            <td><a href="{{link}}">{{timestamp}}</a></td>
+            <td><a href="{{link}}">{{reporttype}}</a></td>
+            <td><a href="{{link}}">{{servername}}</a></td>
+            <td><a href="{{link}}">{{ndc}}</a></td>
+            <td><a href="{{link}}">{{reportnumber}}</a></td>
+            <td><a href="{{link}}">{{message}}</a></td>
+        </tr>
+        {{/logitems}}
+        </tbody>
+    </table>
+    <div class="paginate">
+        <a href="{{ older }}">older log items</a>
+        <a href="{{5}}">5</a>
+        <a href="{{10}}">10</a>
+        <a href="{{25}}">25</a>
+    </div>
+</div>
+</body>
+</html>

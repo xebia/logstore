@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../../style/screen.css" type="text/css">
+</head>
+<body>
+{{>header}}
+<div id="content">
+    <h1>{{ title }}</h1>
+
+    <table class="logitem">
+        <tr>
+            <td class="title">Timestamp</td>
+            <td class="value">{{timestamp}}</td>
+        </tr>
+        <tr>
+            <td class="title">Report type</td>
+            <td class="value">{{reporttype}}</td>
+        </tr>
+        <tr>
+            <td class="title">Server</td>
+            <td class="value">{{servername}}</td>
+        </tr>
+        <tr>
+            <td class="title">NDC</td>
+            <td class="value">{{ndc}}</td>
+        </tr>
+        <tr>
+            <td class="title">Report number</td>
+            <td class="value">{{reportnumber}}</td>
+        </tr>
+        <tr>
+            <td class="title">Message</td>
+            <td class="value">{{message}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
